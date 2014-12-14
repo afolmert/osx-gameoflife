@@ -31,7 +31,8 @@
 
         _active = YES;
 
-        _trackingArea = [[NSTrackingArea alloc] initWithRect:NSMakeRect(0, 0, frame.size.width, frame.size.height)
+        _trackingArea = [[NSTrackingArea alloc]
+                         initWithRect:NSMakeRect(0, 0, frame.size.width, frame.size.height)
                                                      options: NSTrackingActiveInActiveApp |  NSTrackingMouseEnteredAndExited
                                                        owner:self
                                                     userInfo:nil];
@@ -47,12 +48,11 @@
 - (void)setActive:(BOOL)active
 {
 
-
     _active = active;
 
     [NSAnimationContext beginGrouping];
 
-    [NSAnimationContext currentContext].duration = 0.5;
+    [NSAnimationContext currentContext].duration = 0.3;
     [NSAnimationContext currentContext].timingFunction = [CAMediaTimingFunction
             functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
 
@@ -75,6 +75,7 @@
     [[self animator] setAlphaValue:0.0];
 //    _color = [NSColor blueColor];
 //    [self setNeedsDisplay:YES];
+    NSLog(@"Cell is of row %@ and column %@ ", @(_row), @(_column));
 }
 
 - (void)mouseExited:(NSEvent *)theEvent

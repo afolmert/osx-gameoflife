@@ -12,15 +12,15 @@
 #import "CKMatrix.h"
 
 
-static const NSUInteger kCKMatrixRowCount = 30; //70;
+static const NSUInteger kCKMatrixRowCount = 20; //70;
 
-static const NSUInteger kCKMatrixColCount = 30; //100;
+static const NSUInteger kCKMatrixColCount = 26; //100;
 
-static const CGFloat kCKMatrixViewCellWidth = 25;
+static const CGFloat kCKMatrixViewCellWidth = 30;
 
-static const CGFloat kCKMatrixViewCellHeight = 25;
+static const CGFloat kCKMatrixViewCellHeight = 30;
 
-static const CGFloat kCKMatrixViewLineWidth = 1;
+static const CGFloat kCKMatrixViewLineWidth = 0.8;
 
 
 
