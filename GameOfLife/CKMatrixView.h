@@ -1,5 +1,5 @@
 //
-//  main.m
+//  CKMatrixView.h
 //  cocoa-gameoflife
 //
 //  Created by Adam Folmert on 12/13/14.
@@ -8,7 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
-{
-    return NSApplicationMain(argc, (const char **)argv);
-}
+@interface CKMatrixView : NSView
+
+- (void)randomizeActive;
+
+@end

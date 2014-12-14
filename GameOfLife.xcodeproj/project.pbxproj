@@ -17,6 +17,11 @@
 		0972AB6A1A3DA15C0000B4AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0972AB4A1A3DA15C0000B4AC /* Cocoa.framework */; };
 		0972AB721A3DA15C0000B4AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0972AB701A3DA15C0000B4AC /* InfoPlist.strings */; };
 		0972AB751A3DA15C0000B4AC /* GameOfLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0972AB741A3DA15C0000B4AC /* GameOfLifeTests.m */; };
+		097898191A3DBCE5005FE92D /* CKMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 097898111A3DBCE5005FE92D /* CKMatrixView.m */; };
+		0978981A1A3DBCE5005FE92D /* CKCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 097898121A3DBCE5005FE92D /* CKCellView.m */; };
+		0978981B1A3DBCE5005FE92D /* CKMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 097898161A3DBCE5005FE92D /* CKMatrix.m */; };
+		0978981C1A3DBCE5005FE92D /* CKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 097898171A3DBCE5005FE92D /* CKUtils.m */; };
+		0978981E1A3DBCF4005FE92D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0978981D1A3DBCF4005FE92D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,15 @@
 		0972AB711A3DA15C0000B4AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0972AB731A3DA15C0000B4AC /* GameOfLifeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOfLifeTests.h; sourceTree = "<group>"; };
 		0972AB741A3DA15C0000B4AC /* GameOfLifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeTests.m; sourceTree = "<group>"; };
+		097898111A3DBCE5005FE92D /* CKMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMatrixView.m; sourceTree = "<group>"; };
+		097898121A3DBCE5005FE92D /* CKCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCellView.m; sourceTree = "<group>"; };
+		097898131A3DBCE5005FE92D /* CKCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCellView.h; sourceTree = "<group>"; };
+		097898141A3DBCE5005FE92D /* CKMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMatrixView.h; sourceTree = "<group>"; };
+		097898151A3DBCE5005FE92D /* CKMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMatrix.h; sourceTree = "<group>"; };
+		097898161A3DBCE5005FE92D /* CKMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMatrix.m; sourceTree = "<group>"; };
+		097898171A3DBCE5005FE92D /* CKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKUtils.m; sourceTree = "<group>"; };
+		097898181A3DBCE5005FE92D /* CKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUtils.h; sourceTree = "<group>"; };
+		0978981D1A3DBCF4005FE92D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0978981E1A3DBCF4005FE92D /* QuartzCore.framework in Frameworks */,
 				0972AB4B1A3DA15C0000B4AC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +90,7 @@
 		0972AB3E1A3DA15C0000B4AC = {
 			isa = PBXGroup;
 			children = (
+				0978981D1A3DBCF4005FE92D /* QuartzCore.framework */,
 				0972AB501A3DA15C0000B4AC /* GameOfLife */,
 				0972AB6D1A3DA15C0000B4AC /* GameOfLifeTests */,
 				0972AB491A3DA15C0000B4AC /* Frameworks */,
@@ -114,6 +130,14 @@
 		0972AB501A3DA15C0000B4AC /* GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
+				097898111A3DBCE5005FE92D /* CKMatrixView.m */,
+				097898121A3DBCE5005FE92D /* CKCellView.m */,
+				097898131A3DBCE5005FE92D /* CKCellView.h */,
+				097898141A3DBCE5005FE92D /* CKMatrixView.h */,
+				097898151A3DBCE5005FE92D /* CKMatrix.h */,
+				097898161A3DBCE5005FE92D /* CKMatrix.m */,
+				097898171A3DBCE5005FE92D /* CKUtils.m */,
+				097898181A3DBCE5005FE92D /* CKUtils.h */,
 				0972AB5C1A3DA15C0000B4AC /* CKAppDelegate.h */,
 				0972AB5D1A3DA15C0000B4AC /* CKAppDelegate.m */,
 				0972AB5F1A3DA15C0000B4AC /* MainMenu.xib */,
@@ -264,6 +288,10 @@
 			files = (
 				0972AB571A3DA15C0000B4AC /* main.m in Sources */,
 				0972AB5E1A3DA15C0000B4AC /* CKAppDelegate.m in Sources */,
+				097898191A3DBCE5005FE92D /* CKMatrixView.m in Sources */,
+				0978981A1A3DBCE5005FE92D /* CKCellView.m in Sources */,
+				0978981B1A3DBCE5005FE92D /* CKMatrix.m in Sources */,
+				0978981C1A3DBCE5005FE92D /* CKUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +481,7 @@
 				0972AB7A1A3DA15C0000B4AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0972AB7B1A3DA15C0000B4AC /* Build configuration list for PBXNativeTarget "GameOfLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +490,7 @@
 				0972AB7D1A3DA15C0000B4AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
